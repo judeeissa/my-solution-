@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Energy &amp; Environmental Design Solutions — Sustainability, Carbon &amp; Energy Consulting</title>
+<meta name="description" content="EED Solutions helps organizations across the Gulf and beyond build sustainable, resilient projects — ESG, carbon accounting, energy audits, certification, commissioning, environmental studies and renewable energy.">
+<meta name="theme-color" content="#12302B">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Energy & Environmental Design Solutions">
+<meta property="og:description" content="Clear vision. Practical strategy. Meaningful impact — sustainability, carbon and energy consulting.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Energy & Environmental Design Solutions",
+  "url": "https://eed-solutions.com",
+  "telephone": ["+97317162255", "+97338359016"],
+  "email": "contact@eed-solutions.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office No 2252, Building No 747, Road No 1124, Block No 311, Salmaniya",
+    "addressLocality": "Manama",
+    "addressCountry": "BH"
+  },
+  "areaServed": ["Bahrain", "Saudi Arabia", "United Arab Emirates", "Libya", "United Kingdom", "India"]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#122622;
+    --ink-soft:#3B4A45;
+    --paper:#EEF0EA;
+    --paper-raised:#E4E8DF;
+    --line:#CDD3C4;
+    --teal:#2C6E5C;
+    --teal-deep:#173C32;
+    --brass:#B7842E;
+    --white:#FBFCF9;
+    --max:1180px;
+    --gutter:clamp(1.5rem, 5vw, 4rem);
+    --radius:2px;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *,*::before,*::after{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Public Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+
+  h1,h2,h3,h4{
+    font-family:"Newsreader", Georgia, serif;
+    font-weight:500;
+    line-height:1.12;
+    margin:0;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+
+  .container{ max-width:var(--max); margin-inline:auto; padding-inline:var(--gutter); }
+
+  .skip-link{
+    position:absolute; left:-9999px; top:0;
+    background:var(--teal-deep); color:var(--white); padding:0.75rem 1.25rem;
+    z-index:200;
+  }
+  .skip-link:focus{ left:var(--gutter); top:var(--gutter); }
+
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:2px solid var(--brass);
+    outline-offset:3px;
+  }
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky; top:0; z-index:100;
+    background:rgba(238,240,234,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-block:1rem;
+  }
+  .brand{ display:flex; align-items:center; gap:0.75rem; text-decoration:none; }
+  .brand-mark{
+    width:40px; height:40px; flex:none;
+    background:var(--teal-deep);
+    color:var(--white);
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Newsreader", serif; font-weight:500; font-size:1rem; letter-spacing:0.02em;
+    border-radius:var(--radius);
+  }
+  .brand-text{
+    font-family:"Newsreader", serif;
+    font-size:1.02rem;
+    line-height:1.15;
+    color:var(--ink);
+  }
+  .brand-text small{ display:block; font-family:"Public Sans",sans-serif; font-size:0.68rem; color:var(--ink-soft); letter-spacing:0.03em; }
+
+  nav.primary ul{
+    list-style:none; display:flex; gap:2rem; margin:0; padding:0;
+  }
+  nav.primary a{
+    text-decoration:none; font-size:0.95rem; color:var(--ink-soft);
+    padding-block:0.3rem;
+    border-bottom:1px solid transparent;
+    transition:border-color 0.15s ease, color 0.15s ease;
+  }
+  nav.primary a:hover, nav.primary a:focus-visible{ color:var(--ink); border-color:var(--brass); }
+
+  .nav-cta{
+    display:inline-block;
+    background:var(--teal-deep); color:var(--white);
+    text-decoration:none;
+    padding:0.6rem 1.15rem;
+    font-size:0.9rem;
+    border-radius:var(--radius);
+    transition:background 0.15s ease;
+  }
+  .nav-cta:hover{ background:var(--teal); }
+
+  .menu-toggle{
+    display:none; background:none; border:1px solid var(--line); border-radius:var(--radius);
+    width:42px; height:42px; padding:0; cursor:pointer;
+  }
+  .menu-toggle span{ display:block; width:18px; height:2px; background:var(--ink); margin:4px auto; }
+
+  @media (max-width: 860px){
+    nav.primary{ display:none; }
+    .nav-cta{ display:none; }
+    .menu-toggle{ display:block; }
+    nav.mobile{
+      display:none; flex-direction:column; gap:0; border-top:1px solid var(--line);
+      background:var(--paper);
+    }
+    nav.mobile.open{ display:flex; }
+    nav.mobile a{
+      text-decoration:none; color:var(--ink); padding:1rem var(--gutter);
+      border-bottom:1px solid var(--line); font-size:1rem;
+    }
+    nav.mobile a.nav-cta{ display:block; margin:1rem var(--gutter); text-align:center; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:var(--teal-deep);
+    color:var(--white);
+    padding-block:clamp(4rem, 10vw, 7rem);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse at 85% 15%, rgba(183,132,46,0.25), transparent 55%),
+      radial-gradient(ellipse at 10% 90%, rgba(44,110,92,0.55), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-inner{ position:relative; max-width:760px; }
+  .eyebrow-line{
+    display:flex; align-items:center; gap:0.75rem;
+    color:#CBD9C9; font-size:0.9rem; margin-bottom:1.5rem;
+  }
+  .eyebrow-line .rule{ width:2.5rem; height:1px; background:#8FB0A2; }
+
+  .hero h1{
+    font-size:clamp(2.3rem, 5vw, 3.6rem);
+    color:var(--white);
+    font-style:italic;
+    font-weight:400;
+  }
+  .hero p.lede{
+    margin-top:1.5rem; font-size:1.15rem; color:#D9E2D6; max-width:34rem;
+  }
+  .hero-actions{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:2.5rem; }
+
+  .btn{
+    display:inline-flex; align-items:center; gap:0.5rem;
+    text-decoration:none; font-size:0.95rem; font-weight:600;
+    padding:0.85rem 1.5rem; border-radius:var(--radius);
+    border:1px solid transparent;
+    transition:transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--brass); color:var(--teal-deep); }
+  .btn-primary:hover{ background:#CC9A45; }
+  .btn-outline{ border-color:#5B7A6E; color:var(--white); }
+  .btn-outline:hover{ background:rgba(255,255,255,0.08); }
+
+  /* ---------- Sections ---------- */
+  section{ padding-block:clamp(3.5rem, 8vw, 6rem); }
+  .section-head{ max-width:42rem; margin-bottom:2.75rem; }
+  .kicker{
+    display:block; font-size:0.85rem; color:var(--brass); font-weight:600; margin-bottom:0.6rem;
+  }
+  .section-head h2{ font-size:clamp(1.7rem, 3.4vw, 2.4rem); }
+  .section-head p{ margin-top:1rem; color:var(--ink-soft); font-size:1.02rem; }
+
+  .split{
+    display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem, 5vw, 4rem); align-items:center;
+  }
+  @media (max-width:760px){ .split{ grid-template-columns:1fr; } }
+  .split.reverse .art{ order:2; }
+  @media (max-width:760px){ .split.reverse .art{ order:0; } }
+
+  .art{
+    aspect-ratio:4/3; border-radius:var(--radius);
+    background:var(--teal-deep);
+    position:relative; overflow:hidden;
+  }
+  .art svg{ width:100%; height:100%; }
+
+  /* consultation banner */
+  .banner{
+    background:var(--paper-raised);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:clamp(2rem, 5vw, 3rem);
+    display:grid; grid-template-columns:1.3fr auto; gap:2rem; align-items:center;
+  }
+  @media (max-width:700px){ .banner{ grid-template-columns:1fr; } }
+  .banner h2{ font-size:clamp(1.5rem, 3vw, 2rem); }
+  .banner p{ margin-top:0.85rem; color:var(--ink-soft); max-width:38rem; }
+
+  /* specializations */
+  .spec-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line);
+  }
+  @media (max-width:900px){ .spec-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px){ .spec-grid{ grid-template-columns:1fr; } }
+  .spec-item{
+    background:var(--paper); padding:2rem 1.75rem;
+    display:flex; flex-direction:column; gap:1rem;
+  }
+  .spec-icon{ width:34px; height:34px; color:var(--teal); }
+  .spec-icon svg{ width:100%; height:100%; }
+  .spec-item h3{ font-size:1.08rem; font-family:"Public Sans",sans-serif; font-weight:600; }
+  .spec-item p{ margin:0; color:var(--ink-soft); font-size:0.94rem; }
+
+  /* process */
+  .process-list{ list-style:none; margin:0; padding:0; }
+  .process-item{
+    display:grid; grid-template-columns:5rem 1fr; gap:1.5rem;
+    padding-block:2rem; border-top:1px solid var(--line);
+  }
+  .process-item:last-child{ border-bottom:1px solid var(--line); }
+  .process-num{ font-family:"Newsreader",serif; font-style:italic; font-size:1.8rem; color:var(--brass); }
+  .process-item h3{ font-size:1.2rem; margin-bottom:0.5rem; }
+  .process-item p{ margin:0; color:var(--ink-soft); max-width:36rem; }
+
+  /* expertise */
+  .expertise-list{
+    display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--line);
+  }
+  @media (max-width:700px){ .expertise-list{ grid-template-columns:1fr; } }
+  .expertise-item{
+    padding:1.5rem 0; border-bottom:1px solid var(--line);
+    display:flex; align-items:baseline; justify-content:space-between; gap:1rem;
+  }
+  .expertise-list .expertise-item:nth-child(odd){ padding-right:2rem; }
+  .expertise-list .expertise-item:nth-child(even){ padding-left:2rem; }
+  @media (max-width:700px){
+    .expertise-list .expertise-item:nth-child(odd),
+    .expertise-list .expertise-item:nth-child(even){ padding-inline:0; }
+  }
+  .expertise-item span.sector{ font-family:"Newsreader",serif; font-size:1.15rem; }
+  .expertise-item span.tag{ font-size:0.8rem; color:var(--ink-soft); white-space:nowrap; }
+
+  /* closing CTA */
+  .cta-band{
+    background:var(--teal-deep); color:var(--white); text-align:left;
+  }
+  .cta-band .container{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:2rem; }
+  .cta-band h2{ color:var(--white); font-size:clamp(1.6rem, 3.2vw, 2.2rem); max-width:32rem; }
+
+  /* footer */
+  footer.site{ background:var(--ink); color:#C9D2C6; padding-block:4rem 2rem; }
+  .footer-grid{
+    display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:2.5rem;
+  }
+  @media (max-width:820px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .footer-grid{ grid-template-columns:1fr; } }
+  .footer-grid h4{
+    color:var(--white); font-family:"Public Sans",sans-serif; font-size:0.85rem;
+    letter-spacing:0.03em; margin-bottom:1rem; font-weight:600;
+  }
+  .footer-grid ul{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.6rem; }
+  .footer-grid a{ text-decoration:none; color:#B7C2B4; font-size:0.92rem; }
+  .footer-grid a:hover{ color:var(--white); }
+  .footer-brand p{ color:#AEBBAB; font-size:0.92rem; max-width:24rem; }
+  address{ font-style:normal; color:#AEBBAB; font-size:0.92rem; }
+  .footer-bottom{
+    margin-top:3rem; padding-top:1.5rem; border-top:1px solid #223832;
+    display:flex; flex-wrap:wrap; gap:1rem; justify-content:space-between;
+    font-size:0.85rem; color:#8FA08B;
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="container nav-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">EED</span>
+      <span class="brand-text">Energy &amp; Environmental<br>Design Solutions</span>
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <ul>
+        <li><a href="#specializations">Services</a></li>
+        <li><a href="#process">How we work</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="nav-cta" href="#contact">Get free consultation</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile" id="mobileNav" aria-label="Mobile">
+    <a href="#specializations">Services</a>
+    <a href="#process">How we work</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" href="#contact">Get free consultation</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="eyebrow-line"><span class="rule"></span> Sustainability &amp; energy consulting</div>
+      <h1>Clear vision, practical strategy, a meaningful impact on every project.</h1>
+      <p class="lede">We help organizations and developments across the region stay sustainable — from first concept through certification, commissioning and long-term performance.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Get a free consultation</a>
+        <a class="btn btn-outline" href="#specializations">See what we do</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="welcome">
+    <div class="container split">
+      <div>
+        <span class="kicker">Where we build your visions</span>
+        <h2>Welcome to Energy &amp; Environmental Design Solutions</h2>
+        <p style="margin-top:1.25rem; color:var(--ink-soft); max-width:34rem;">
+          This is where ideas take shape — across sustainability planning, carbon management,
+          energy efficiency, certification, commissioning, environmental studies, renewable
+          energy and technical training. Each service strengthens the foundation of a more
+          responsible, resilient future, turning ambition into measurable, lasting impact.
+        </p>
+      </div>
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="300" fill="#173C32"/>
+          <g stroke="#4E8A76" stroke-width="1.2" fill="none" opacity="0.6">
+            <path d="M0 220 C80 190 120 240 200 200 S320 150 400 190" />
+            <path d="M0 250 C90 230 140 270 220 235 S330 190 400 220" />
+          </g>
+          <g fill="#B7842E">
+            <circle cx="300" cy="90" r="34"/>
+          </g>
+          <g stroke="#EEF0EA" stroke-width="2" opacity="0.85">
+            <line x1="300" y1="35" x2="300" y2="50"/>
+            <line x1="300" y1="130" x2="300" y2="145"/>
+            <line x1="245" y1="90" x2="260" y2="90"/>
+            <line x1="340" y1="90" x2="355" y2="90"/>
+            <line x1="264" y1="54" x2="274" y2="64"/>
+            <line x1="326" y1="116" x2="336" y2="126"/>
+            <line x1="264" y1="126" x2="274" y2="116"/>
+            <line x1="326" y1="64" x2="336" y2="54"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="consultation">
+    <div class="container">
+      <div class="banner">
+        <div>
+          <h2>Start with a free consultation</h2>
+          <p>Every engagement begins with a complimentary one-hour session to understand your goals and constraints, so we can outline the right approach before any work begins.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:contact@eed-solutions.com">Book an appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="specializations">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Our specializations</span>
+        <h2>Eight disciplines, one integrated approach</h2>
+        <p>We combine global best practice with local context, so every recommendation improves performance, lowers impact and holds up over the long term.</p>
+      </div>
+    </div>
+    <div class="container" style="padding-inline:0; max-width:var(--max); margin-inline:auto;">
+      <div class="spec-grid" style="margin-inline:var(--gutter);">
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c4 3 6 6 6 10a6 6 0 0 1-12 0c0-4 2-7 6-10Z"/><path d="M12 21V11"/></svg></span>
+          <h3>ESG</h3>
+          <p>Building future-ready practices that hold up to scrutiny and reporting.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><circle cx="12" cy="17" r="3"/><path d="M9.5 9.8 10.2 15.2M14.5 9.8 13.8 15.2M9.8 7 14.2 7"/></svg></span>
+          <h3>Carbon</h3>
+          <p>Measuring, reducing, managing and reporting carbon with confidence.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20 12 4l8 16"/><path d="M8 20v-6M16 20v-9M12 20v-3"/></svg></span>
+          <h3>Energy audit</h3>
+          <p>Smart insight into where energy is lost, and proven ways to recover it.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>Certification management</h3>
+          <p>Sustainability planning and certification for projects of any scale.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></span>
+          <h3>Commissioning</h3>
+          <p>Independent verification that building and industrial systems perform as designed.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v6M12 22v-6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg></span>
+          <h3>Environmental studies</h3>
+          <p>Studies and approvals that support development from planning through operation.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2 2M17.4 17.4l2 2M4.6 19.4l2-2M17.4 6.6l2-2"/></svg></span>
+          <h3>Renewable energy</h3>
+          <p>Enabling smarter, cleaner sources of power for the long run.</p>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6l8-3 8 3-8 3-8-3Z"/><path d="M4 6v9l8 3 8-3V6"/><path d="M12 9v9"/></svg></span>
+          <h3>Technical training</h3>
+          <p>Building sustainability capability inside your own team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">How we engage</span>
+        <h2>Three steps, always in this order</h2>
+        <p>We start by understanding, not proposing — the right service only makes sense once we know your industry, business and strategy.</p>
+      </div>
+      <ol class="process-list">
+        <li class="process-item">
+          <span class="process-num">1</span>
+          <div>
+            <h3>Understand your needs</h3>
+            <p>We study your industry, understand how your business runs day to day, and evaluate the strategy already in place.</p>
+          </div>
+        </li>
+        <li class="process-item">
+          <span class="process-num">2</span>
+          <div>
+            <h3>Ideation</h3>
+            <p>We brainstorm together, help articulate what you actually need, and turn that into specific, workable requirements.</p>
+          </div>
+        </li>
+        <li class="process-item">
+          <span class="process-num">3</span>
+          <div>
+            <h3>Solutions &amp; delivery</h3>
+            <p>We set out a sustainability pathway, scope the exact services required, and deliver results you can measure.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Our expertise</span>
+        <h2>Sectors we work across</h2>
+        <p>The same methodology, applied to different scales and complexities of development.</p>
+      </div>
+      <ul class="expertise-list">
+        <li class="expertise-item"><span class="sector">Masterplanning</span><span class="tag">Planning &amp; strategy</span></li>
+        <li class="expertise-item"><span class="sector">Mega &amp; giga developments</span><span class="tag">Large-scale</span></li>
+        <li class="expertise-item"><span class="sector">Buildings</span><span class="tag">Certification &amp; commissioning</span></li>
+        <li class="expertise-item"><span class="sector">Renewable energy</span><span class="tag">Generation &amp; systems</span></li>
+        <li class="expertise-item"><span class="sector">Infrastructure</span><span class="tag">Public &amp; utility</span></li>
+        <li class="expertise-item"><span class="sector">Industrial plants</span><span class="tag">Process &amp; efficiency</span></li>
+        <li class="expertise-item"><span class="sector">Corporate entities &amp; institutions</span><span class="tag">ESG &amp; reporting</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Grow sustainably with Energy &amp; Environmental Design Solutions.</h2>
+      <a class="btn btn-primary" href="#contact">Get free consultation</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h4>Energy &amp; Environmental Design Solutions</h4>
+      <p>Sustainability, carbon and energy consulting for organizations and developments across the region.</p>
+    </div>
+
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#specializations">Energy audit</a></li>
+        <li><a href="#specializations">ESG reporting</a></li>
+        <li><a href="#specializations">Certification management</a></li>
+        <li><a href="#specializations">Carbon accounting</a></li>
+        <li><a href="#specializations">Building &amp; project commissioning</a></li>
+        <li><a href="#specializations">Environmental surveys</a></li>
+        <li><a href="#specializations">Renewable energy design</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#welcome">Who we are</a></li>
+        <li><a href="#process">How we work</a></li>
+        <li><a href="#expertise">Our expertise</a></li>
+        <li><a href="mailto:contact@eed-solutions.com">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Office</h4>
+      <address>
+        Office No 2252, Building No 747, Road No 1124,<br>
+        Block No 311, Salmaniya, Manama,<br>
+        Kingdom of Bahrain
+        <br><br>
+        <a href="tel:+97317162255">+973 17 162 255</a><br>
+        <a href="tel:+97338359016">+973 38 359 016</a><br>
+        <a href="mailto:contact@eed-solutions.com">contact@eed-solutions.com</a>
+      </address>
+      <p style="margin-top:1rem;">Bahrain · Saudi Arabia · UAE · Libya · United Kingdom · India</p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Energy &amp; Environmental Design Solutions.</span>
+    <span>Built with accessible, standards-based HTML &amp; CSS.</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const toggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  toggle.addEventListener('click', () => {
+    const open = mobileNav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  mobileNav.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      mobileNav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+
+</body>
+</html>
